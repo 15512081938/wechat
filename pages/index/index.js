@@ -1,0 +1,51 @@
+//index.js
+//获取应用实例
+const app = getApp()
+
+Page({
+  data: {
+   search:[
+    {img:"https://m.boxuegu.com/_nuxt/img/logo.4ba874d.png"}
+   ],
+   nav:[
+    {img:"https://attachment-center.boxuegu.com/data/picture/online/2019/10/24/19/027d44b8c1f34fdfb655ec87157f7520.jpg"}
+   ],
+   meuns:[
+     {img:"https://m.boxuegu.com/web/images/index/course.png",text:"就业课"},
+     {img:"https://m.boxuegu.com/web/images/index/mircoCourse.png",text:"提升课"},
+     {img:"https://m.boxuegu.com/web/images/index/freeMicroCourse.png",text:"免费课"},
+     {img:"https://m.boxuegu.com/web/images/index/courseType.png",text:"课程分类"}
+   ],
+   content:[
+    {
+      img:"https://file.boxuegu.com/f6c878722f394a7c9bd12c0319f00037.png",
+      title:"JavaEE",
+      introdute:"JavaEE是一个开放的、基于标准的平台",
+      study:"1784人学习",
+      price:"￥14980.00"
+    },
+    {
+      img:"https://file.boxuegu.com/e19c53c6c1fa468aad6e11cb61d81b9a.png",
+      title:"Python+人工智能",
+      introdute:"最有前景的开发职位",
+      study:"877人学习",
+      price:"￥14900.00"
+    },
+    {
+      img:"https://file.boxuegu.com/3940be1c755a44eeb8e2e0aaf984756e.png",
+      title:"前端与移动开发",
+      introdute:"用户界面的构筑者",
+      study:"1230人学习",
+      price:"￥14980.00"
+    },
+    {
+      img:"https://file.boxuegu.com/6c0ffe21a06d421d90be8a0061c14c1a.png",
+      title:"软件测试",
+      introdute:"变量，常量，函数，循环，判断，遍历，数组，对象等等知识点",
+      study:"189人学习",
+      price:"￥12980.00"
+    },
+   ]
+  }
+  
+})

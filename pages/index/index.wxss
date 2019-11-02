@@ -1,0 +1,89 @@
+/**index.wxss**/
+@import "/public/style/css.wxss";
+
+.search{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20rpx;
+  height: 100rpx;
+}
+.search image{
+  height: 52rpx;
+  width: 182rpx;
+}
+.nav image {
+  width: 750rpx;
+  height: 350rpx;
+}
+
+.menus {
+  height: 200rpx;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 40rpx;
+}
+
+.menus image {
+  width: 80rpx;
+  height: 80rpx;
+}
+
+.menus .menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+}
+
+.content {
+  margin-top: 20rpx;
+  background: #fff;
+}
+
+.content-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20rpx 10rpx 0rpx;
+}
+
+.content-item{
+  display: flex;
+  margin-top: 15rpx;
+}
+.content-item .left{
+  padding: 10rpx 20rpx 5rpx;
+}
+.content-item .left image{
+  border-radius: 12rpx;
+  width: 356rpx;
+  height: 230rpx;
+}
+.content-item .right{
+  padding: 0 20rpx;
+  font-size: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.content-item .right .title {
+  font-size: 15px;
+}
+.content-item .right .introdute {
+  color: #9999A6;
+}
+.content-item .right view:last-child{
+  display: flex;
+  justify-content: space-between;
+}
+.content-item .right view:last-child view:first-child{
+  width: 150rpx;
+}
+.content-item .right view:last-child view:last-child{
+  color: #FF544C;
+  margin-left: 40rpx;
+}

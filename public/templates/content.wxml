@@ -1,0 +1,15 @@
+<template name="content">
+    <view class="content-item">
+        <view class="left">
+            <image src="{{items.img}}" />
+        </view>
+        <view class="right">
+            <view>{{items.title}}</view>
+            <view>{{items.introdute}}</view>
+            <view>
+                <view>{{items.study}}</view>
+                <view>{{items.price}}</view>
+            </view>
+        </view>
+    </view>
+</template>

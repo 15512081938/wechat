@@ -1,0 +1,46 @@
+<!-- <import src="/public/templates/content.wxml" /> -->
+<block wx:for="{{search}}" wx:key="search">
+  <view class="search">
+    <view>
+      <image src="{{item.img}}" />
+    </view>
+    <view>
+      <view class="iconfont icon-sousuo"></view>
+    </view>
+  </view>
+</block>
+<block wx:for="{{nav}}" wx:key="nav">
+  <view class="nav">
+    <image src="{{item.img}}"></image>
+  </view>
+</block>
+<view class="menus">
+  <block wx:for="{{meuns}}" wx:key="menus">
+    <view class="menu">
+      <image class="imgs" src="{{item.img}}"></image>
+      <text>{{item.text}}</text>
+    </view>
+  </block>
+</view>
+<view class="content">
+  <view class="content-nav">
+    <view>| 就业课</view>
+    <view>更多</view>
+  </view>
+  <block wx:for="{{content}}" wx:key="content">
+    <!-- <template id="content" data="{{item}}"/> -->
+    <view class="content-item">
+      <view class="left">
+        <image src="{{item.img}}" />
+      </view>
+      <view class="right">
+        <view class="title">{{item.title}}</view>
+        <view class="introdute">{{item.introdute}}</view>
+        <view>
+          <view>{{item.study}}</view>
+          <view>{{item.price}}</view>
+        </view>
+      </view>
+    </view>
+  </block>
+</view>

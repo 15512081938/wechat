@@ -1,0 +1,50 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/cate/cate",
+    "pages/home/home",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "navigationBarTitleText": "博学谷",
+    "enablePullDownRefresh": true,
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#F63515",
+    "navigationBarTextStyle": "white",
+    "pageOrientation": "auto"
+  },
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "color": "#333333",
+    "selectedColor": "#FF2D4A",
+    "position": "bottom",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "/images/home.png",
+        "selectedIconPath": "/images/home_active.png"
+      },
+      {
+        "pagePath": "pages/cate/cate",
+        "text": "功能",
+        "iconPath": "/images/cate.png",
+        "selectedIconPath": "/images/cate_active.png"
+      },
+      {
+        "pagePath": "pages/home/home",
+        "text": "个人首页",
+        "iconPath": "/images/index.png",
+        "selectedIconPath": "/images/index_active.png"
+      }
+    ]
+  },
+  "debug":true,
+  "networkTimeout": {
+    "request": 10000,
+    "connectSocket": 10000,
+    "uploadFile": 10000,
+    "downloadFile": 10000
+  }
+}
