@@ -2,6 +2,7 @@
   "pages": [
     "pages/index/index",
     "pages/cate/cate",
+    "pages/study/study",
     "pages/home/home",
     "pages/logs/logs"
   ],
@@ -33,8 +34,14 @@
         "selectedIconPath": "/images/cate_active.png"
       },
       {
+        "pagePath": "pages/study/study",
+        "text": "学习",
+        "iconPath": "/images/study.png",
+        "selectedIconPath": "/images/study_active.png"
+      },
+      {
         "pagePath": "pages/home/home",
-        "text": "个人首页",
+        "text": "个人",
         "iconPath": "/images/index.png",
         "selectedIconPath": "/images/index_active.png"
       }
