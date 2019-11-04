@@ -23,7 +23,10 @@
 </view>
 <view class="content">
   <view class="content-nav">
-    <view><span class="shuxian"></span>就业课</view>
+    <view>
+      <view class="shuxian"></view>
+      就业课
+    </view>
     <view>更多</view>
   </view>
   <block wx:for="{{content}}" wx:key="content">
@@ -44,57 +47,48 @@
 </view>
 <view class="content-tj">
   <view class="content-tj-nav">
-    <view><span class="shuxian"></span>免费课程</view>
+    <view>
+      <view class="shuxian"></view>
+      免费课程
+    </view>
     <view>更多</view>
   </view>
   <view class="content-tj-item">
     <block wx:for="{{tj}}" wx:key="tj">
       <view class="list">
-      <view>
-        <image src="{{item.img}}" />
-      </view>
-      <view class="content-tj-course">
-        {{item.title}}
-      </view>
-      <view>
-        <view class="content-tj-learnCount">
-          {{item.study}}
+        <view>
+          <image src="{{item.img}}" />
         </view>
-        <view class="content-tj-money">
-         {{item.price}}
+        <view class="content-tj-course">{{item.title}}</view>
+        <view>
+          <view class="content-tj-learnCount">{{item.study}}</view>
+          <view class="content-tj-money">{{item.price}}</view>
         </view>
       </view>
-    </view>
     </block>
   </view>
 </view>
-
 <view class="content-tj">
   <view class="content-tj-nav">
-    <view><span class="shuxian"></span>免费课</view>
+    <view>
+      <view class="shuxian"></view>
+      免费课
+    </view>
     <view>更多</view>
   </view>
   <view class="content-tj-item">
     <block wx:for="{{free}}" wx:key="tj">
       <view class="list">
-      <view>
-        <image src="{{item.img}}" />
-      </view>
-      <view class="content-tj-course">
-        {{item.title}}
-      </view>
-      <view>
-        <view class="content-tj-learnCount">
-          {{item.study}}
+        <view>
+          <image src="{{item.img}}" />
         </view>
-        <view class="content-tj-money">
-         免费
+        <view class="content-tj-course">{{item.title}}</view>
+        <view>
+          <view class="content-tj-learnCount">{{item.study}}</view>
+          <view class="content-tj-money">免费</view>
         </view>
       </view>
-    </view>
     </block>
   </view>
-  <view class="kongbai">
-    
-  </view>
+  <view class="kongbai"></view>
 </view>

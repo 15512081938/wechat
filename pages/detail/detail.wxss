@@ -1,0 +1,124 @@
+/* pages/detail/detail.wxss */
+@import "/public/style/css.wxss";
+.search{
+    width: 100%;
+    padding: 10rpx;
+    border-bottom:1rpx solid #ccc;
+}
+.search_profilter_toplist{
+    position: relative;
+    text-align: center;
+    color: #666;
+    font-size: 12px;
+    background-color:#fcedeb;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 730rpx;
+    height: 54rpx;
+    border-radius: 4rpx;
+}
+.search_profilter_toplist image{
+    width: 90rpx;
+    height: 28rpx;
+}
+.search_prolist.cols_1 .search_prolist_item {
+    padding-top: 10rpx;
+}
+.search_prolist_item{
+    margin-top: 10rpx;
+    display: flex;
+    padding: 10rpx 0 10rpx 20rpx;
+    background-color: #fff;
+}
+.leftphoto image{
+    width: 240rpx;
+    height: 240rpx;
+}
+
+.rightcontent{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 500rpx;
+    height: 240rpx;
+    box-sizing: border-box;
+    padding: 0 10rpx;
+    overflow: hidden;
+    line-height: 1;
+    /* padding-bottom: 8rpx; */
+    min-height: 240rpx;
+}
+.title{
+    word-break: break-all;
+    color: #333;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 82rpx;
+    line-height: 1.36;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+.price{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    color:#e93b3d;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1;
+}
+.pricenum {
+    font-size: 18px;
+}
+.jdzy image{
+    width: 48rpx;
+    height: 28rpx; 
+}
+.jdzy{
+    color:#999;
+    font-size:12px;
+    display: flex;
+    align-items: center;
+}
+.title image{
+    width: 68rpx;
+    height: 28rpx; 
+}
+
+.qjd{
+    color:#999;
+    font-size:12px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.qjd .ad{
+    color: #fff;
+    font: 10px;
+    background: #CCC;
+    padding: 0 4rpx;
+}
+
+.scroll{
+    height: 2000rpx;
+}
+.hide{
+    position: fixed;
+    bottom: 80rpx;
+    right: 20rpx;
+    z-index:99999;
+    opacity: 0;
+    transition: all .6s;
+}
+.show{
+    position: fixed;
+    bottom: 80rpx;
+    right: 20rpx;
+    z-index:99999;
+    opacity: 1;
+    transition: all .6s;
+}

@@ -1,0 +1,18 @@
+<import src="/public/templates/content.wxml" />
+<scroll-view class="scroll" scroll-y="{{true}}" bindscrolltoupper="upper" bindscrolltolower="lower" scroll-with-animation="{{true}}" scroll-top="{{ topnum }}" bindscroll="scroll">
+    <view class="search">
+        <view class="search_profilter_toplist">
+            <view>点击筛选</view>
+            <view>
+                <image src="https://img11.360buyimg.com/jdphoto/s90x28_jfs/t1/50544/35/13798/15234/5da7cf8cEf7e5ea76/8a9fad8c8aef6121.png" />
+            </view>
+            <view>活动商品</view>
+        </view>
+    </view>
+    <view class="box">
+        <template is="detail" data="{{listdata}}" />
+    </view>
+</scroll-view>
+<view class="{{ show }}" bind:tap="gotop">
+    <view class="iconfont icon-huidaodingbu"></view>
+</view>

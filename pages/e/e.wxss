@@ -1,0 +1,80 @@
+/* pages/e/e.wxss */
+.nav-e{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20rpx;
+    align-items : center;
+}
+.now{
+    color:red;
+}
+.blue{
+    width: 750rpx;
+    height: 300rpx;
+    background: blue;
+}
+.green{
+    width: 750rpx;
+    height: 300rpx;
+
+    background-color: green;
+}
+.pink{
+    width: 750rpx;
+    height: 300rpx;
+
+    background-color: pink;
+}
+.box {
+    position: relative;
+}
+.flag{
+    position: absolute;
+    right: 20rpx;
+    bottom: 40rpx;
+    color: skyblue;
+}
+.scroll{
+    height: 800rpx;
+    background-color: #abcdef;
+}
+.hide{
+    opacity: 0;
+    transition: all .6s;
+}
+.show{
+    opacity: 1;
+    transition: all .6s;
+}
+.share{
+    position: relative;
+}
+.share image{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100rpx;
+    height: 100rpx;
+}
+.share button{
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    width: 100rpx;
+    height: 100rpx;
+}
+
+.inputsearch input{
+    margin-top: 100rpx;
+    border-bottom: 1px solid #888;
+    height: 60rpx;
+    line-height: 60rpx;
+}
+
+.section {
+    display: flex;
+}
+.section input{
+    border-bottom: 1px solid #888;
+}

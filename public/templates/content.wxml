@@ -1,15 +1,32 @@
-<template name="content">
-    <view class="content-item">
-        <view class="left">
-            <image src="{{items.img}}" />
-        </view>
-        <view class="right">
-            <view>{{items.title}}</view>
-            <view>{{items.introdute}}</view>
-            <view>
-                <view>{{items.study}}</view>
-                <view>{{items.price}}</view>
+<template name="detail">
+    <block wx:for="{{ listdata }}" wx:key="listdata">
+        <navigator hover-class="none" open-type="navigate" url="/pages/details/details?id={{index}}&price={{ item.price}}&logo={{ item.logo }}&jdzy={{ item.jdzy }}&title={{ item.title }}">
+            <view class="search_prolist cols_1">
+                <view class="search_prolist_item">
+                    <view class="leftphoto">
+                        <image src="{{ item.left }}" />
+                    </view>
+                    <view class="rightcontent">
+                        <view class="title">
+                            <image src="{{ item.logo }}" />
+                            {{ item.title }}
+                        </view>
+                        <view class="price">
+                            ¥
+                            <view class="pricenum">{{ item.price}}</view>
+                            .00
+                        </view>
+                        <view class="jdzy">
+                            <image src="{{ item.jdzy }}" />
+                            {{ item.intro }}
+                        </view>
+                        <view class="qjd">
+                            <view>{{ item.qjd }} ></view>
+                            <view class="ad">广告</view>
+                        </view>
+                    </view>
+                </view>
             </view>
-        </view>
-    </view>
+        </navigator>
+    </block>
 </template>

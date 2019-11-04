@@ -1,5 +1,8 @@
 {
   "pages": [
+    "pages/detail/detail",
+    "pages/details/details",
+    "pages/e/e",
     "pages/index/index",
     "pages/cate/cate",
     "pages/study/study",
@@ -7,7 +10,7 @@
     "pages/logs/logs"
   ],
   "window": {
-    "navigationBarTitleText": "博学谷",
+    "navigationBarTitleText": "小宝做的京东小程序",
     "enablePullDownRefresh": true,
     "backgroundTextStyle": "dark",
     "navigationBarBackgroundColor": "#F63515",

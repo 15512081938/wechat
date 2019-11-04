@@ -1,0 +1,128 @@
+<view bind:tap="click">事件绑定</view>
+<view bind:tap="click">
+    bind会冒泡
+    <view bind:tap="click">bind真的会冒泡</view>
+</view>
+<view catch:tap="click">
+    catch不会冒泡
+    <view catch:tap="click">catch真的不会冒泡</view>
+</view>
+<view>{{ showtime }}</view>
+<view bind:touchstart="starttime" bind:touchend="endtime">一直点我看你能点几秒</view>
+<view data-id="1" data-name="xiaobao" bind:tap="eventfn">事件传参，一起标签</view>
+<view bind:tap="eventfn">
+    <view data-id="2" data-name="xiaobao2">事件传参，单标签</view>
+</view>
+<view bind:tap="typefn" data-id="{{ 1 }}">int类型</view>
+<view bind:tap="typefn" data-id="{{ true }}">boolean类型</view>
+<view bind:tap="typefn" data-id="1">string类型</view>
+<view bind:tap="typefn" data-id="{{ [1,2] }}">array类型</view>
+<view bind:tap="typefn" data-id="{{ {id:1} }}">object类型</view>
+<view class="nav-e">
+    <block wx:for="{{itemse}}" wx:key="itemse">
+        <view bind:tap="shownav" data-index="{{ index }}" class="{{ shownow[index] }}">
+            {{ item.title }}
+        </view>
+    </block>
+</view>
+<view class="currenthtml">
+    <block wx:for="{{itemse}}" wx:key="itemse">
+        <view hidden="{{ hideintro[index] }}">{{item.intro}}</view>
+    </block>
+</view>
+<view class="box">
+    <swiper indicator-dots="{{true}}" autoplay="{{true}}" current="{{current}}" interval="{{2500}}" duration="{{500}}" circular="{{true}}" bindchange="change">
+        <block wx:for="{{background}}" wx:key="background">
+            <swiper-item>
+                <view class="{{item}}"></view>
+            </swiper-item>
+        </block>
+    </swiper>
+    <view class="flag">{{current}}/3</view>
+</view>
+<view class="nav-e">
+    <block wx:for="{{itemse}}" wx:key="itemse">
+        <view bind:tap="shownavs" data-index="{{ index }}" class="{{ shownow[index] }}">
+            {{ item.title }}
+        </view>
+    </block>
+</view>
+<swiper indicator-dots="{{false}}" autoplay="{{true}}" current="{{current}}" interval="{{2500}}" duration="{{500}}" circular="{{true}}" bindchange="changes">
+    <block wx:for="{{itemse}}" wx:key="itemse">
+        <swiper-item>
+            <view>{{item.intro}}</view>
+        </swiper-item>
+    </block>
+</swiper>
+<scroll-view class="scroll" scroll-y="{{true}}" bindscrolltoupper="upper" bindscrolltolower="lower" scroll-with-animation="{{true}}" scroll-top="{{ topnum }}" bindscroll="scroll">
+    <block wx:for="{{scroll}}" wx:key="scroll">
+        <view>{{item}}</view>
+    </block>
+</scroll-view>
+<view class="{{ show }}"  bind:tap="gotop">
+    回到顶部    
+</view>
+
+<rich-text nodes="{{ richtext }}" />
+
+<view class="share">
+    <image src="https://wx.1314000.cn/share.png"/>
+    <button type="primary" open-type="share"> share </button>
+</view>
+
+<view class="inputsearch">
+    <input bindinput="inputfn" type="text" placeholder="将会获取焦点"/>
+</view>
+<block wx:for="{{ inputdata }}" wx:key="inputdata">
+    <view>
+        {{item}}
+    </view>
+</block>
+
+<view>
+    <form bindsubmit="formSubmit" bindreset="formReset">
+  <view class="section">
+    <view>username:</view>
+    <input name="username" placeholder="username" />
+  </view>
+
+   <view class="section">
+    <view>password:</view>
+    <input name="password" placeholder="password" password="{{true}}"/>
+   </view>
+
+  <view class="section sex">
+    <view>sex:</view>
+    <radio-group name="sex">
+      <label><radio value="1" checked="{{true}}"/>gentleman</label>
+      <label><radio value="2"/>lady</label>
+    </radio-group>
+  </view>
+
+  <view class="section hobby">
+    <view>hobby:</view>
+    <checkbox-group name="hobby">
+      <label><checkbox value="bear"/>bear</label>
+      <label><checkbox value="balloon"/>balloon</label>
+      <label><checkbox value="monkey"/>monkey</label>
+    </checkbox-group>
+  </view>
+
+  <view class="section">
+     <picker mode="date" bindchange="bindDateChange" name="birthday">
+      <view class="picker">
+      birthday is:{{date}}
+     </view>
+    </picker>
+  </view>
+
+  <view class="btn-area">
+    <button type="primary" form-type="submit">Submit</button>
+    <button type="primary" form-type="reset">Reset</button>
+  </view>
+</form>
+</view>
+
+<navigator hover-class="none" open-type="navigate" url="/pages/logs/logs">有去有回</navigator>
+<navigator hover-class="none" open-type="redirect" url="/pages/logs/logs">有去无回</navigator>
+<navigator hover-class="none" open-type="switchTab" url="/pages/index/index">上天了</navigator>

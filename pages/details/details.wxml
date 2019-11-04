@@ -1,0 +1,43 @@
+<view class="box">
+    <swiper indicator-dots="{{true}}" autoplay="{{true}}" interval="{{2500}}" duration="{{500}}" circular="{{true}}" bindchange="change" style="height: 750rpx">
+        <block wx:for="{{images}}" wx:key="images">
+            <swiper-item style="height: 750rpx">
+                <image class="img1" src="{{item}}" />
+            </swiper-item>
+        </block>
+    </swiper>
+    <view class="flag">{{current}}/8</view>
+</view>
+<view class="picintroduce">
+    <image class="img2" src="https://img30.360buyimg.com/jdphoto/jfs/t1/77621/40/13428/113573/5da86d3cE9a189ee2/3d6d245ea393c962.png!q70.webp"></image>
+</view>
+<view>
+    <view class="pricewrap">
+        <view class="price">
+            ¥
+            <view class="pricenum">{{price}}</view>
+            .00
+        </view>
+        <view class="tubiao">
+            <view class="icontag">
+                <view class="iconfont icon-jiagepaixu"></view>
+                <view class="iconcolor">降价提醒</view>
+            </view>
+            <view class="icontag">
+                <view class="iconfont icon-shoucang"></view>
+                <view class="iconcolor">收藏</view>
+            </view>
+        </view>
+    </view>
+    <view class="detailtitle">
+        <view class="title">
+            <image class="img3" src="{{ logo }}" />
+            <image class="img4" src="{{ jdzy }}" />
+            {{ title }}
+        </view>
+        <view class="comment">
+            【新品发售！限时优惠100，到手价2198！赠半年碎屏宝+半年延保+3期免息】疾速芯生，生而强悍！5G全网通火力开抢！
+            <view class="red">查看></view>
+        </view>
+    </view>
+</view>
