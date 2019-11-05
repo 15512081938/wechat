@@ -1,0 +1,4 @@
+<block wx:for="{{tests}}" wx:key="tests">
+    <view>当前用户为：</view>
+    <view>{{index}}--{{item.name}}--{{item.age}}--{{item.email}}</view>
+</block>

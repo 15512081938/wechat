@@ -1,0 +1,4 @@
+<wxs src="../../utils/tools.wxs" module="tools"></wxs>
+<block wx:for="{{items}}" wx:key="items">
+    <view>{{tools.cutStr(item.title)}}</view>
+</block>

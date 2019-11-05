@@ -1,0 +1,3 @@
+<cp value="父向子通性"></cp>
+<cp></cp>
+<cp value="子向夫通性"  bind:myfn="sonfn"></cp>

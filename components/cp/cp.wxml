@@ -1,0 +1,3 @@
+<view class="cp">我是components组件</view>
+<view class="cp">{{ value }}</view>
+<view class="cp" bind:tap="click">{{value}}</view>

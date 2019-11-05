@@ -1,6 +1,9 @@
 {
   "pages": [
     "pages/detail/detail",
+    "pages/network/network",
+    "pages/cutstr/cutstr",
+    "pages/cp/cp",
     "pages/details/details",
     "pages/e/e",
     "pages/index/index",
@@ -10,7 +13,7 @@
     "pages/logs/logs"
   ],
   "window": {
-    "navigationBarTitleText": "小宝做的京东小程序",
+    "navigationBarTitleText": "京东小程序",
     "enablePullDownRefresh": true,
     "backgroundTextStyle": "dark",
     "navigationBarBackgroundColor": "#F63515",
@@ -50,7 +53,7 @@
       }
     ]
   },
-  "debug":true,
+  "debug": true,
   "networkTimeout": {
     "request": 10000,
     "connectSocket": 10000,
