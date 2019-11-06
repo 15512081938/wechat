@@ -1,7 +1,9 @@
 {
   "pages": [
-    "pages/detail/detail",
+    "pages/user/user",
+    "pages/cache/cache",
     "pages/network/network",
+    "pages/detail/detail",
     "pages/cutstr/cutstr",
     "pages/cp/cp",
     "pages/details/details",

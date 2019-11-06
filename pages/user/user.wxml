@@ -1,0 +1,4 @@
+<image src="{{ userinfo.avatar }}"></image>
+<button open-type="getUserInfo" bind:tap="getuserinfo" size="mini" type="primary" hidden="{{ show }}">
+    用户授权
+</button>
